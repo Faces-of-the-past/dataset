@@ -1,0 +1,19 @@
+[project]
+name = "dataset"
+version = "0.1.0"
+description = "Dataset build workflow"
+authors = [
+    {name = "Pablo Rodríguez",email = "pablo.rodriguez.sanchez@gmail.com"}
+]
+license = "Apache-2.0"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
