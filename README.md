@@ -11,11 +11,13 @@ Here we provide a script that:
 3. Checks the consistency of the downloads. If something is missing or wrong, re-downloads that and only that.
 
 ## How to use?
-Install `poetry` and run:
+We are using `poetry` for dependency management. Install `poetry` and run:
 
 ```sh
-poetry run download.py
+poetry run python download.py
 ```
+
+If you prefer to use your own dependency management system, just run `python download.py`.
 
 ## Architecture
 
