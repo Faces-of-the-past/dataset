@@ -1,4 +1,15 @@
-## Description
+# Description
+
+## How to run me
+
+The data curator should run this:
+```sh
+poetry run python build_manifest.py
+```
+
+Other users will directly download from the manifest and check consistency (to be developed).
+
+## Main idea
 
 The download url seems to be coded in the media.original_file_name_lref field. With this pattern:
 
@@ -18,3 +29,6 @@ In addition, it resumes safely: a killed/interrupted run reuses already-download
 ## Questions for Lia
 
 - Each XML record can have several <media> entries (e.g. priref 19 has 3: an ektachrome, a color reproduction, a b/w photo). Which should become the image we download for that record?
+
+## Next steps
+- Use `@priref` as identifier. It is the core of the permalink.
